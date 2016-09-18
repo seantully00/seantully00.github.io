@@ -2,6 +2,11 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
 }
 
+img {
+  height: 200px;
+  width: 300px;
+}
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
