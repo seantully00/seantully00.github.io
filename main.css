@@ -2,7 +2,7 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
 }
 
-img {
+.portfolio img {
   height: 200px;
   width: 300px;
 }
