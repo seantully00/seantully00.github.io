@@ -11,16 +11,16 @@
   </head>
 
   <body>
+    <div id="navbar"></div>
     <!--Navigation bar-->
-    <ul class="topnav" id="myTopnav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Coding Portfolio</a></li>
-      <li><a href="cw.html">Creative Writing</a>C</li>
-      <li><a href="vhs.html">VHS</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li class="icon">
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-  </ul>
+    <script>
+    $( "#navbar" ).load( "/navbar.html", function( response, status, xhr ) {
+      if ( status == "error" ) {
+        var msg = "Sorry but there was an error: ";
+        $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
+      }
+    });
+    </script>
 
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
